@@ -1,0 +1,323 @@
+/*header*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    padding: 2px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.nav-links{
+    display: flex; justify-content: center;
+    list-style:none; gap: 20px; font-size: 20px;
+}
+.logo{ 
+    font-family:'poppins',sans-serif ;
+    font-size: 28px;
+    font-weight:bold;
+    color:#0d6efd;
+    text-decoration: none;
+    letter-spacing: 1px;
+  padding: 5px;
+    display: inline-block;
+   
+    transition: all 0.3 ease;
+    display: flex;
+
+}
+@media ( max-width:786px) {.nav-links{
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 50px; right: 20px;
+    padding: 10px;
+} .nav-links .show{
+    display: flex;
+}
+    
+}
+
+/*banner*/
+.banner{
+    height:100vh ;
+background: url('https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVhY3QlMjBqc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500') no-repeat center center/cover;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.banner-content{
+    position: relative;
+    z-index: 10px;
+}
+.banner h1{
+    font-size: 6rem;
+    margin-bottom: 10px;
+}
+.banner p{
+    font-size: 1.4rem;
+}
+/*about*/
+.about{ padding: 50px 20px;
+    background: #f9f9f9;
+
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+ 
+}
+
+.about-image img{
+    width: 150%;
+    max-width: 450px;
+    border-radius: 10px;
+
+}
+
+.about-content{
+max-width: 500px;
+
+}
+.about-content h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+}
+.about-content p{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: #444;
+}
+.btn{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #0078ff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+@media ( max-width:768px) {
+    .about-container{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    
+}
+/*services*/
+.services{
+    padding: 50px 20px;
+    text-align: center;
+
+
+}
+.service h2{
+font-size: 2rem;
+margin-bottom: 30px;
+
+
+}
+.card-container{
+    gap: 10pxpx;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex; gap: 30px;
+
+}
+.card{  background: white;
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition:transform 0.3s; ; 
+
+}
+
+.card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+        justify-content: space-between;
+
+        text-align: center; gap: 10px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      card h3 {
+        margin: 15px 0 10px;
+      }
+      .card p{ color:#555 ;}
+
+
+    .kd{
+        
+        text-align: center;
+        background: #333;
+        color: white;
+        padding: 10px;
+        
+    }
+
+    .contact-section{
+        padding: 50px 20px;
+        background: #f9fafc;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+         max-width: auto ;
+    }
+    .contact-section .row{ display: grid;
+        grid-template-columns: repeat(2,1fr); gap: 20px;
+        margin-bottom: 30px;
+
+
+
+    }
+    .contact-section .box{
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    .contact-section h2{
+        font-size: 1.5rem;
+        color: #0d6efd;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #e3e9f0;
+        padding: 8px;
+    } 
+    .contact-section p{
+        margin: 8px 0;
+        line-height: 1.6;
+    }
+    .contact-section details{
+background: #f4f4f4;
+padding: 12px 15px;
+margin: 8px 0;
+cursor: pointer;
+
+    }
+    .card-section summary{
+        font-weight: bold;
+        font-size: 0.95rem;
+        color: #555;
+
+
+    }
+.contact-section detais p{
+    margin-top: 8px;
+    font-size: 0.95rem;
+        color: #555;
+}
+.contact-section iframe{
+    overflow: hidden;
+    width: 450px;
+    height:300px;
+    border-radius: 10px;
+
+}
+
+@media ( max-width:768px) {
+   .contact-section .row{
+    grid-template-columns: 1fr;
+   }
+   .map-video{
+    flex-direction: column;
+
+   }
+}
+.react{
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+justify-content: center;
+margin-top: 5px;
+}
+.serve{
+  font-size: 3rem; 
+  font: bold;
+}
+/*footer*/
+footer{
+    background: #333;
+    color: #fff;
+    padding: 20px 30px;
+
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.footer-container ul{
+    list-style: none;
+}
+
+
+.footer-container ul li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.f1{
+  font-size: 2.5rem;
+  color: #0078ff;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+.f2{
+  font-size: 1.5rem; color: slateblue;  
+  margin-top: 5px;
+}
+.f4{
+  font-size: 1.5rem;
+  color: red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.f22{
+  font-size: 2rem; color: slateblue;  
+  margin-top: 5px; 
+  margin-bottom: 30px;
+}
