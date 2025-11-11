@@ -1,5 +1,4 @@
 https://cerulean-pothos-b569ba.netlify.app/
-
 <img width="1366" height="2797" alt="screencapture-localhost-5174-Services-jsx-2025-11-06-15_19_33" src="https://github.com/user-attachments/assets/cac7a43e-04f5-4367-ac12-16046600e05f" />
 
 # React + Vite
